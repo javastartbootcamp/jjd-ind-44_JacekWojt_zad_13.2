@@ -13,17 +13,17 @@ public class Utils {
 
     static int sumList(List<Integer> numbers) {
         int sum = 0;
-        for (int i = 0; i < numbers.size(); i++) {
-            sum += numbers.get(i);
+        for (Integer number : numbers) {
+            sum += number;
         }
         return sum;
     }
 
     static int smallestNumberOfList(List<Integer> numbers) {
         int smallestElement = 100;
-        for (int i = 0; i < numbers.size(); i++) {
-            if (numbers.get(i) < smallestElement) {
-                smallestElement = numbers.get(i);
+        for (Integer number : numbers) {
+            if (number < smallestElement) {
+                smallestElement = number;
             }
         }
         return smallestElement;
@@ -31,9 +31,9 @@ public class Utils {
 
     static int highestNumberOfList(List<Integer> numbers) {
         int biggestElement = 0;
-        for (int i = 0; i < numbers.size(); i++) {
-            if (numbers.get(i) > biggestElement) {
-                biggestElement = numbers.get(i);
+        for (Integer number : numbers) {
+            if (number > biggestElement) {
+                biggestElement = number;
             }
         }
         return biggestElement;
